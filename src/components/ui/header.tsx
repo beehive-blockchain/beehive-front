@@ -5,8 +5,9 @@ import { Button } from './button';
 const Header: React.FC = () => {
   return (
     <header className="flex justify-between items-center p-4 bg-gray-100 border-b border-gray-300">
-      <div>
+      <div className="flex items-center gap-2">
         <img src="/beehive_v2.png" alt="Logo" className="h-8 rounded-full" />
+        <span className="text-xl font-bold">Beehive</span>
       </div>
       <nav className="flex gap-4 items-center">
         <a href="#explore" className="text-blue-500">Explore</a>
