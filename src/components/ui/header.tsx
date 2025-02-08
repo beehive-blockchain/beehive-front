@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   return (
     <header className="flex justify-between items-center p-4 bg-gray-100 border-b border-gray-300">
       <div>
-        <img src="/public/beehive_v1.png" alt="Logo" className="h-8 rounded-full" />
+        <img src="/beehive_v2.png" alt="Logo" className="h-8 rounded-full" />
       </div>
       <nav className="flex gap-4 items-center">
         <a href="#explore" className="text-blue-500">Explore</a>

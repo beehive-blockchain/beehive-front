@@ -36,7 +36,7 @@ const chartConfig = {
   },
   safari: {
     label: "Safari",
-    color: "#93c5fd",
+    color: "#2563eb",
   },
   firefox: {
     label: "Firefox",
