@@ -15,15 +15,14 @@ const Tokenomics: React.FC = () => {
         </div>
         <div className="p-4 bg-gray-100 rounded-md">
           <h3 className="text-xl font-semibold">Market Cap</h3>
-          <p className="text-gray-700">$500,000,000</p>
+          <p className="text-gray-700">$1,000,000,000</p>
         </div>
         <div className="p-4 bg-gray-100 rounded-md">
           <h3 className="text-xl font-semibold">Token Distribution</h3>
           <ul className="list-disc list-inside text-gray-700">
-            <li>40% - Public Sale</li>
-            <li>30% - Team & Advisors</li>
-            <li>20% - Ecosystem Fund</li>
-            <li>10% - Reserve</li>
+            <li>50% - ICO</li>
+            <li>30% - Vault self-detained</li>
+            <li>20% - Ecosystem & community</li>
           </ul>
         </div>
       </div>
