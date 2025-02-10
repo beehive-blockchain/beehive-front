@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from './button';
 
-const Description: React.FC = () => {
+export default function Description() {
   return (
     <section className="p-8 bg-gradient-to-r from-blue-300 to-purple-400 text-white rounded-md shadow-lg">
       <h2 className="text-3xl font-bold mb-6">Welcome to Our Revolutionary Crypto Project</h2>
@@ -18,5 +18,3 @@ const Description: React.FC = () => {
     </section>
   );
 };
-
-export default Description;

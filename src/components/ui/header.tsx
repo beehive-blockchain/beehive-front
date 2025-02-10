@@ -1,10 +1,9 @@
 import React from 'react';
 import { Button } from './button';
 
-
-const Header: React.FC = () => {
+export default function Header() {
   return (
-    <header className="flex justify-between items-center p-4 bg-gray-100 border-b border-gray-300">
+    <header className="flex justify-between items-center p-4 border-gray-300">
       <div className="flex items-center gap-2">
         <img src="/beehive_v2.png" alt="Logo" className="h-8 rounded-full" />
         <span className="text-xl font-bold">Beehive</span>
@@ -14,9 +13,7 @@ const Header: React.FC = () => {
         <a href="#vote" className="text-blue-500">Vote</a>
         <a href="#lending" className="text-blue-500">Lending</a>
       </nav>
-      <Button variant="default">Connect wallet</Button>
+      <Button variant="default">Connect</Button>
     </header>
   );
 };
-
-export default Header;

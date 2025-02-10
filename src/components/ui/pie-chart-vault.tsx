@@ -52,7 +52,7 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-export function MyPieChart() {
+export function MyPieChartVault() {
   const totalValueLocked = React.useMemo(() => {
     return chartData.reduce((acc, curr) => acc + curr.tvl, 0)
   }, [])

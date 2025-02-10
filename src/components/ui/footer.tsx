@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer className="flex justify-between items-center p-4 bg-gray-100 border-t border-gray-300">
       <div className="text-sm">&copy; 2025 Beehive</div>
@@ -12,5 +12,3 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
-
-export default Footer;
