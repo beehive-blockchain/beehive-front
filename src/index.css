@@ -19,18 +19,18 @@
 
 @layer components {
 	.heading-1 {
-		@apply text-8xl font-bold text-black dark:text-white leading-normal;
+		@apply text-8xl font-bold text-black dark:text-white;
 	}
 
 	.heading-2 {
-		@apply text-7xl font-bold text-black dark:text-white leading-normal;
+		@apply text-7xl font-bold text-black dark:text-white;
 	}
 
 	.heading-3 {
-		@apply text-5xl font-bold text-black dark:text-white leading-normal;
+		@apply text-5xl font-bold text-black dark:text-white;
 	}
 
 	.paragraph {
-		@apply text-3xl text-black dark:text-paragraph leading-normal;
+		@apply text-3xl text-black dark:text-paragraph;
 	}
 }
