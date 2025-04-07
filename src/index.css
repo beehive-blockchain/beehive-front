@@ -3,34 +3,20 @@
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-@theme {
-	--font-display: 'Inter', sans-serif;
-
-	--color-paragraph: #e1e1e1;
-	--color-blanCasse: #fbfcfc;
-	--color-blancBleu: #f0f6fe;
-	--color-bleu: #3662e3;
-	--color-bleuFonce: #1e2d4e;
-	--color-vertFonce: #213a33;
-	--color-vertClair: #5ec269;
-	--color-violetFonce: #2e254e;
-	--color-violetClair: #9d59ef;
-}
-
 @layer components {
 	.heading-1 {
-		@apply text-8xl font-bold text-black dark:text-white;
+		@apply text-8xl font-bold text-black dark:text-white leading-[0.90];
 	}
 
 	.heading-2 {
-		@apply text-7xl font-bold text-black dark:text-white;
+		@apply text-7xl font-bold text-black dark:text-white leading-[0.90];
 	}
 
 	.heading-3 {
-		@apply text-5xl font-bold text-black dark:text-white;
+		@apply text-4xl font-bold text-black dark:text-white leading-[0.90];
 	}
 
 	.paragraph {
-		@apply text-3xl text-black dark:text-paragraph;
+		@apply text-2xl text-black dark:text-paragraph leading-tight;
 	}
 }
