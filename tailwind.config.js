@@ -12,17 +12,6 @@ export default {
 			fontFamily: {
 				display: ["'Inter'", 'sans-serif'],
 			},
-			colors: {
-				paragraph: '#e1e1e1',
-				blanCasse: '#fbfcfc',
-				blancBleu: '#f0f6fe',
-				bleu: '#3662e3',
-				bleuFonce: '#1e2d4e',
-				vertFonce: '#213a33',
-				vertClair: '#5ec269',
-				violetFonce: '#2e254e',
-				violetClair: '#9d59ef',
-			},
 			keyframes: {
 				'accordion-down': {
 					from: {
