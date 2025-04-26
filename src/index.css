@@ -8,15 +8,15 @@
 
 @layer components {
 	.heading-1 {
-		@apply text-6xl font-bold text-black dark:text-white leading-[0.90];
+		@apply text-5xl md:text-6xl font-bold text-black dark:text-white leading-[0.90];
 	}
 
 	.heading-2 {
-		@apply text-5xl font-bold text-black dark:text-white leading-[0.90];
+		@apply text-4xl md:text-5xl font-bold text-black dark:text-white leading-[0.90];
 	}
 
 	.heading-3 {
-		@apply text-3xl font-bold text-black dark:text-white leading-[0.90];
+		@apply text-2xl md:text-3xl font-bold text-black dark:text-white leading-[0.90];
 	}
 
 	.paragraph {
@@ -26,7 +26,7 @@
 
 @theme {
 	--color-paragraph: #e1e1e1;
-	--color-blan-casse: #fbfcfc;
+	--color-blanc-casse: #fbfcfc;
 	--color-blanc-bleu: #f0f6fe;
 	--color-bleu: #3662e3;
 	--color-bleu-fonce: #1e2d4e;
@@ -130,6 +130,8 @@
 
 		--secondary: oklch(0.97 0 0);
 
+		--secondary-hover: oklch(0.83 0 0);
+
 		--secondary-foreground: oklch(0.205 0 0);
 
 		--muted: oklch(0.97 0 0);
@@ -148,7 +150,7 @@
 
 		--ring: oklch(0.708 0 0);
 
-		--chart-btc: oklch(75% 0.25 40);
+		--chart-btc: oklch(0.75 0.1663 62.59);
 
 		--chart-eth: oklch(70% 0.2 280);
 

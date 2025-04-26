@@ -62,6 +62,12 @@ export function Component() {
 		<Card data-chart={id} className="flex flex-col">
 			<ChartStyle id={id} config={chartConfig} />
 			<CardHeader className="flex-row items-start space-y-0 pb-0">
+				<h2 className="heading-2 text-center">Current Fund Holdings</h2>
+				<p className="paragraph text-center my-6">
+					View our current fund holdings for a transparent look at our
+					portfolio. Stay informed with real-time updates on our diversified
+					investments
+				</p>
 				<Select value={activeCrypto} onValueChange={setActiveCrypto}>
 					<SelectTrigger
 						className="ml-auto h-7 w-[130px] rounded-lg pl-2.5"
@@ -166,7 +172,7 @@ export function Component() {
 		</Card>
 	);
 }
-export default function PieChartInteractive() {
+export default function PieChartCurrentFunds() {
 	return (
 		<>
 			<Component />
