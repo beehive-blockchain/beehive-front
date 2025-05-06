@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { fadeInUp } from '@/utils/animations';
 import shield from '@/assets/icons/shield.svg';
 import ones from '@/assets/icons/ones.svg';

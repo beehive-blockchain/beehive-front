@@ -1,6 +1,6 @@
 import Header from './components/header';
 import { useAutoTheme } from '@/hooks/use-auto-theme';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { fadeIn } from '@/utils/animations';
 import { Outlet } from 'react-router-dom';
 

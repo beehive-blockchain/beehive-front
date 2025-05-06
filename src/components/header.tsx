@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { fadeIn } from '@/utils/animations';
 import { Link } from 'react-router-dom';
 import ConnectWalletButton from '@/hooks/connect-wallet-button.hook';
