@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { MoveRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { fadeInUp } from '@/utils/animations'; // <<< Use fadeInUp for sections!
+import { fadeInUp } from '@/utils/animations';
 
 export default function HeroSection() {
 	return (

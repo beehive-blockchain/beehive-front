@@ -1,6 +1,7 @@
-import { Button } from './ui/button';
 import { motion } from 'framer-motion';
 import { fadeIn } from '@/utils/animations';
+import { Link } from 'react-router-dom';
+import ConnectWalletButton from '@/hooks/connect-wallet-button.hook';
 
 export default function Header() {
 	return (
@@ -18,21 +19,22 @@ export default function Header() {
 
 				{/* Navigation Links */}
 				<nav className="hidden md:flex space-x-6 text-sm">
-					<a href="#" className="hover:text-gray-500">
-						Overview
-					</a>
-					<a href="#" className="hover:text-gray-500">
-						Current Fund Holdings
-					</a>
-					<a href="#" className="hover:text-gray-500">
+					<Link to="/" className="hover:text-gray-500">
+						Home
+					</Link>
+					<Link to="/earlyInvestors" className="hover:text-gray-500">
+						Early Investors
+					</Link>
+					{/* Change the links when needed */}
+					<Link to="/" className="hover:text-gray-500">
 						Tokenomics
-					</a>
-					<a href="#" className="hover:text-gray-500">
+					</Link>
+					<Link to="/" className="hover:text-gray-500">
 						Supply
-					</a>
+					</Link>
 				</nav>
 
-				<Button variant={'bleu'}>Get started</Button>
+				<ConnectWalletButton />
 			</motion.div>
 		</header>
 	);

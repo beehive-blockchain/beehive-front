@@ -22,13 +22,13 @@ export default function Footer() {
 							</p>
 						</div>
 						<nav className="flex items-center gap-6">
-							<a href="#about" className="hover:underline">
+							<a to="#about" className="hover:underline">
 								About
 							</a>
-							<a href="#contact" className="hover:underline">
+							<a to="#contact" className="hover:underline">
 								Contact
 							</a>
-							<a href="#privacy" className="hover:underline">
+							<a to="#privacy" className="hover:underline">
 								Privacy Policy
 							</a>
 						</nav>
