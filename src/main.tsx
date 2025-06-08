@@ -5,7 +5,7 @@ import { AppRouter } from '@/router/routes';
 import { WagmiProvider, createConfig, http } from 'wagmi';
 import { walletConnect } from '@wagmi/connectors';
 import { mainnet } from 'wagmi/chains';
-import ConnectWalletButton from '@/hooks/connect-wallet-button.hook'; // <-- Use your custom button
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 // --- wagmi config ---
 const config = createConfig({
@@ -20,19 +20,12 @@ const config = createConfig({
   },
 });
 
-// --- App wrapper ---
-function App() {
-  return (
-    <WagmiProvider config={config}>
-      <ConnectWalletButton />
-      <AppRouter />
-    </WagmiProvider>
-  );
-}
-
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <WagmiProvider config={config}>
+      <QueryClientProvider client={new QueryClient()}>
+        <AppRouter />
+      </QueryClientProvider>
+    </WagmiProvider>
   </React.StrictMode>
 );
-
