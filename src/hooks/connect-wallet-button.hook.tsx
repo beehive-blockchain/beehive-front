@@ -1,39 +1,25 @@
-import { useState } from 'react';
-import { ethers } from 'ethers';
 import { Button } from '@/components/ui/button';
 import { Wallet } from 'lucide-react';
+import { useConnect, useAccount } from 'wagmi';
 
 export default function ConnectWalletButton() {
-	const [walletAddress, setWalletAddress] = useState<string | null>(null);
+	const { connect, connectors, isPending } = useConnect();
+	const { address, isConnected } = useAccount();
 
-	const connectWallet = async () => {
-		try {
-			if (!window.ethereum) {
-				alert('MetaMask not detected');
-				return;
-			}
-
-			// Create an adapter for ethers v6 BrowserProvider
-			const ethereumProvider = window.ethereum as EthereumProvider;
-			// Create an adapter that matches the Eip1193Provider interface
-			const provider = new ethers.BrowserProvider({
-				request: async (request) => {
-					return await ethereumProvider.request(request.method, request.params);
-				},
-			});
-			await provider.send('eth_requestAccounts', []);
-			const signer = await provider.getSigner();
-			const address = await signer.getAddress();
-			setWalletAddress(address);
-			console.log('Connected wallet:', address);
-		} catch (error) {
-			console.error('Wallet connection error:', error);
-		}
-	};
+	// Find the WalletConnect connector
+	const wcConnector = connectors.find((c) => c.id === 'walletConnect');
 
 	return (
-		<Button variant="bleu" onClick={connectWallet}>
-			{walletAddress ? 'Connected' : 'Connect'}
+		<Button
+			variant="bleu"
+			onClick={() => wcConnector && connect({ connector: wcConnector })}
+			disabled={isPending}
+		>
+			{isConnected
+				? `Connected: ${address?.slice(0, 6)}...${address?.slice(-4)}`
+				: isPending
+				? 'Connecting...'
+				: 'Connect'}
 			<Wallet size={16} />
 		</Button>
 	);
