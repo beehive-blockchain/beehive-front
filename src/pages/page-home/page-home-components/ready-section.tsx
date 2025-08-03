@@ -14,8 +14,6 @@ export default function ReadyToStartSection() {
 				transition={{ duration: 1.1 }}
 				className="flex flex-col justify-center items-center font-display px-8 py-6"
 			>
-				{/* TODO : Add animations and other background for black and white mode */}
-
 				<h2 className="heading-2 text-center whitespace-pre">
 					Ready To Start Your
 					<span className="block text-bleu dark:text-white whitespace-pre">

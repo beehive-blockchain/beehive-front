@@ -15,7 +15,7 @@ export default function NewEraSection() {
 				transition={{ duration: 1.1 }}
 				className="font-display px-8 py-6"
 			>
-				<div className="shadow-lg dark:shadow-bleu-fonce p-6 rounded-lg bg-blanc-bleu dark:dark:bg-bleu-fonce">
+				<div className="glassmorphism p-6">
 					<h2 className="heading-2 text-center">
 						A New Era of Investment Management
 					</h2>

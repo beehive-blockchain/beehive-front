@@ -14,12 +14,8 @@ export default function HeroSection() {
 				transition={{ duration: 1.1 }}
 				className="flex flex-col justify-center items-center font-display px-8 py-6 mt-6"
 			>
-				<h1 className="heading-1 text-center">
-					The Future of
-					<span className="block text-bleu dark:text-white">
-						{' '}
-						Crypto investment
-					</span>
+				<h1 className="heading-1 text-center title-gradient-light dark:title-gradient-dark pb-4">
+					The Future of Crypto investment
 				</h1>
 				<p className="paragraph my-6 text-center">
 					BeeHive leverages advanced algorithms and market intelligence to
