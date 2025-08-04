@@ -1,8 +1,8 @@
 import { motion } from 'motion/react';
 import { fadeInUp } from '@/utils/animations';
-import shield from '@/assets/icons/shield.svg';
-import ones from '@/assets/icons/ones.svg';
-import globe from '@/assets/icons/globe.svg';
+import shield from '@/assets/3Dicons/shield.png';
+import target from '@/assets/3Dicons/target.png';
+import wallet from '@/assets/3Dicons/wallet.png';
 
 export default function NewEraSection() {
 	return (
@@ -30,7 +30,7 @@ export default function NewEraSection() {
 						</div>
 					</div>
 					<div className="flex flex-row md:flex-row justify-start items-center my-6 gap-8">
-						<img src={globe} alt="Globe Icon" className="w-16 h-16 mt-4" />
+						<img src={wallet} alt="Wallet Icon" className="w-16 h-16 mt-4" />
 						<div>
 							<h2 className="heading-3 mt-4">Global Exposure</h2>
 							<p className="paragraph mt-2">
@@ -39,7 +39,7 @@ export default function NewEraSection() {
 						</div>
 					</div>
 					<div className="flex flex-row md:flex-row justify-start items-center gap-8">
-						<img src={ones} alt="Ones Icon" className="w-16 h-16 mt-4" />
+						<img src={target} alt="Target Icon" className="w-16 h-16 mt-4" />
 						<div>
 							<h2 className="heading-3 mt-4">Smart Allocation</h2>
 							<p className="paragraph mt-2">
