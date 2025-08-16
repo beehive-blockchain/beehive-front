@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { fadeIn } from '@/utils/animations';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
 	return (
@@ -22,15 +23,15 @@ export default function Footer() {
 							</p>
 						</div>
 						<nav className="flex items-center gap-6">
-							<a to="#about" className="cursor-pointer hover:underline">
+							<Link to="#about" className="cursor-pointer hover:underline">
 								About
-							</a>
-							<a to="#contact" className="cursor-pointer hover:underline">
+							</Link>
+							<Link to="#contact" className="cursor-pointer hover:underline">
 								Contact
-							</a>
-							<a to="#privacy" className="cursor-pointer hover:underline">
+							</Link>
+							<Link to="#privacy" className="cursor-pointer hover:underline">
 								Privacy Policy
-							</a>
+							</Link>
 						</nav>
 					</div>
 					<hr className="my-4 border-t border-gray-300 dark:border-gray-700" />
