@@ -14,6 +14,10 @@ const router = createBrowserRouter([
 				path: AppRoutePaths.EARLY_INVESTORS,
 				element: <PageEarlyInvestors />,
 			},
+			// {
+			// 	path: AppRoutePaths.WHITE_PAPER,
+			// 	element: <PageWhitePaper />,
+			// },
 		],
 	},
 ]);
