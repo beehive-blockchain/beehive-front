@@ -1,0 +1,5 @@
+# Redirect /whitepaper to the actual PDF
+/whitepaper /actualWPBeehive.pdf 200
+
+# SPA fallback for all other routes
+/*    /index.html   200

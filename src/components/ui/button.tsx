@@ -11,15 +11,14 @@ const buttonVariants = cva(
 			variant: {
 				default:
 					'bg-primary text-primary-foreground shadow hover:bg-primary/80',
-				bleu: 'bg-bleu text-primary-foreground shadow hover:bg-blue-700 dark:bg-gray-300 dark:text-black dark:hover:bg-blanc-casse/90',
+				// Issue with the color of the font in the button while deleting white mode
+				bleu: 'shadow bg-gray-300 text-default hover:bg-blanc-casse/90',
 				destructive:
 					'bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90',
 				outline:
 					'border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground',
-				secondary:
-					'bg-secondary text-secondary-foreground shadow-sm hover:bg-gray-200/60 dark:bg-bleu-fonce dark:text-white dark:hover:bg-gray-800',
-				ghost:
-					'hover:bg-gray-200 hover:text-accent-foreground dark:text-white dark:hover:bg-gray-900',
+				secondary: 'shadow-sm bg-bleu-fonce text-white hover:bg-gray-800',
+				ghost: 'hover:text-accent-foreground text-white hover:bg-gray-900',
 				link: 'text-primary underline-offset-4 hover:underline',
 			},
 			size: {

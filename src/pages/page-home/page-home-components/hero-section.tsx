@@ -12,9 +12,9 @@ export default function HeroSection() {
 				whileInView="visible"
 				viewport={{ once: true, amount: 0.3 }}
 				transition={{ duration: 1.1 }}
-				className="flex flex-col justify-center items-center font-display px-8 py-6 mt-6"
+				className="flex flex-col justify-center items-center font-display mt-6"
 			>
-				<h1 className="heading-1 text-center title-gradient-light dark:title-gradient-dark pb-4">
+				<h1 className="heading-1 text-center title-gradient pb-4">
 					The Future of Crypto Investment
 				</h1>
 				<p className="paragraph my-6 text-center">
@@ -26,8 +26,8 @@ export default function HeroSection() {
 						<Button variant="bleu" className="rounded-full text-white mb-6">
 							Start Investing
 						</Button>
-						<p className="font-bold dark:text-paragraph text-center">$X.XB</p>
-						<p className="dark:text-paragraph text-center">
+						<p className="font-bold text-paragraph text-center">$X.XB</p>
+						<p className="text-paragraph text-center">
 							Assets Under Management
 						</p>
 					</div>
@@ -36,10 +36,8 @@ export default function HeroSection() {
 							Learn more
 							<MoveRight />
 						</Button>
-						<p className="font-bold dark:text-paragraph text-center">XX.X%</p>
-						<p className="dark:text-paragraph text-center">
-							Average Annual Return
-						</p>
+						<p className="font-bold text-paragraph text-center">XX.X%</p>
+						<p className="text-paragraph text-center">Average Annual Return</p>
 					</div>
 				</div>
 			</motion.div>

@@ -11,7 +11,7 @@ export default function CurrentFundHoldingsSection() {
 				whileInView="visible"
 				viewport={{ once: true, amount: 0.3 }}
 				transition={{ duration: 1.1 }}
-				className="font-display px-8 py-6"
+				className="font-display"
 			>
 				<PieChartCurrentFunds />
 			</motion.div>

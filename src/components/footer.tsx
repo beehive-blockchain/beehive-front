@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
 	return (
 		<>
-			<footer className="text-black dark:text-white p-4 md:p-6">
+			<footer className="text-white p-4 md:p-6">
 				<motion.div
 					variants={fadeIn}
 					initial="hidden"
@@ -34,7 +34,7 @@ export default function Footer() {
 							</Link>
 						</nav>
 					</div>
-					<hr className="my-4 border-t border-gray-300 dark:border-gray-700" />
+					<hr className="my-4 border-t border-gray-700" />
 					<p className="text-center mt-4">
 						&copy; 2025 BeeHive. All rights reserved.
 					</p>
