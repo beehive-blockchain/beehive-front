@@ -1,4 +1,4 @@
 export const AppRoutePaths = Object.freeze({
 	HOME: '/',
-	EARLY_INVESTORS: '/earlyInvestors',
+	EARLY_INVESTORS: '/early-investors',
 });

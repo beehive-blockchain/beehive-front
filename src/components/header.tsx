@@ -5,7 +5,7 @@ import ConnectWalletButton from '@/hooks/connect-wallet-button.hook';
 
 export default function Header() {
 	return (
-		<header className="text-black dark:text-white font-display w-full p-4 shadow-md">
+		<header className="text-white font-display w-full p-4 shadow-md">
 			<motion.div
 				variants={fadeIn}
 				initial="hidden"
@@ -31,6 +31,9 @@ export default function Header() {
 					</Link>
 					<Link to="/" className="hover:text-gray-500">
 						Supply
+					</Link>
+					<Link to="/whitePaper" className="hover:text-gray-500">
+						Docs
 					</Link>
 				</nav>
 

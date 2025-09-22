@@ -10,7 +10,7 @@ export default function TokenSupplyReductionSection() {
 				whileInView="visible"
 				viewport={{ once: true, amount: 0.3 }}
 				transition={{ duration: 1.1 }}
-				className="font-display px-8 py-6"
+				className="font-display"
 			>
 				<h2 className="heading-2">Token Supply Reduction</h2>
 				<p className="paragraph mt-4">

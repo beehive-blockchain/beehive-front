@@ -4,41 +4,32 @@
 @tailwind;
 @tailwind utilities;
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @layer components {
 	.heading-1 {
-		@apply text-5xl md:text-6xl font-bold text-black dark:text-white leading-[0.90];
+		@apply text-5xl md:text-6xl font-bold text-white leading-[0.90];
 	}
 
 	.heading-2 {
-		@apply text-4xl md:text-5xl font-bold text-black dark:text-white leading-[0.90];
+		@apply text-4xl md:text-5xl font-bold text-white leading-[0.90];
 	}
 
 	.heading-3 {
-		@apply text-2xl md:text-3xl font-bold text-black dark:text-white leading-[0.90];
+		@apply text-2xl md:text-3xl font-bold text-white leading-[0.90];
 	}
 
 	.paragraph {
-		@apply text-xl text-black dark:text-paragraph leading-tight;
+		@apply text-xl text-paragraph leading-tight;
 	}
 
 	.glassmorphism {
-		@apply backdrop-blur-md bg-blanc-bleu/10 dark:bg-bleu-fonce/15 border border-bleu/15 dark:border-blanc-casse/8 shadow-xl rounded-lg;
+		@apply backdrop-blur-md bg-bleu-fonce/15 border border-blanc-casse/8 shadow-xl rounded-lg;
 	}
 
-	.title-gradient-light {
-		background: linear-gradient(
-			135deg,
-			var(--color-bleu),
-			var(--color-vert-clair)
-		);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-clip: text;
+	.pageMargin {
+		@apply mx-8 space-y-8;
 	}
 
-	.title-gradient-dark {
+	.title-gradient {
 		background: linear-gradient(
 			135deg,
 			var(--color-violet-clair),

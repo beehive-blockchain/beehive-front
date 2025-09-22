@@ -13,7 +13,7 @@ export default function NewEraSection() {
 				whileInView="visible"
 				viewport={{ once: true, amount: 0.3 }}
 				transition={{ duration: 1.1 }}
-				className="font-display px-8 py-6"
+				className="font-display"
 			>
 				<div className="glassmorphism p-6">
 					<h2 className="heading-2 text-center">

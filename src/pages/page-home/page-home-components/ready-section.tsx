@@ -12,11 +12,11 @@ export default function ReadyToStartSection() {
 				whileInView="visible"
 				viewport={{ once: true, amount: 0.3 }}
 				transition={{ duration: 1.1 }}
-				className="flex flex-col justify-center items-center font-display px-8 py-6"
+				className="flex flex-col justify-center items-center font-display"
 			>
 				<h2 className="heading-2 text-center whitespace-pre">
 					Ready To Start Your
-					<span className="block text-bleu dark:text-white whitespace-pre">
+					<span className="block text-white whitespace-pre">
 						{' '}
 						Crypto Journey ?
 					</span>
@@ -31,8 +31,8 @@ export default function ReadyToStartSection() {
 							Start Investing
 							<MoveRight />
 						</Button>
-						<p className="font-bold dark:text-paragraph text-center">$X.XB</p>
-						<p className="dark:text-paragraph text-center">
+						<p className="font-bold text-paragraph text-center">$X.XB</p>
+						<p className="text-paragraph text-center">
 							Assets Under Management
 						</p>
 					</div>
@@ -40,10 +40,8 @@ export default function ReadyToStartSection() {
 						<Button variant="secondary" className="rounded-full mb-6">
 							More informations
 						</Button>
-						<p className="font-bold dark:text-paragraph text-center">XX.X%</p>
-						<p className="dark:text-paragraph text-center">
-							Average Annual Return
-						</p>
+						<p className="font-bold text-paragraph text-center">XX.X%</p>
+						<p className="text-paragraph text-center">Average Annual Return</p>
 					</div>
 				</div>
 			</motion.div>
