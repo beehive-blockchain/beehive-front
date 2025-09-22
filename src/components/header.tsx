@@ -33,7 +33,7 @@ export default function Header() {
 					<Link to="/" className="hover:text-gray-500">
 						Supply
 					</Link>
-					<Link to="/whitePaper" className="hover:text-gray-500">
+					<Link to={AppRoutePaths.WHITE_PAPER} className="hover:text-gray-500">
 						Docs
 					</Link>
 				</nav>
