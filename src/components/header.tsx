@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { fadeIn } from '@/utils/animations';
 import { Link } from 'react-router-dom';
 import ConnectWalletButton from '@/hooks/connect-wallet-button.hook';
+import { AppRoutePaths } from '@/router/app-route-paths';
 
 export default function Header() {
 	return (
@@ -19,10 +20,10 @@ export default function Header() {
 
 				{/* Navigation Links */}
 				<nav className="hidden md:flex space-x-6 text-sm">
-					<Link to="/" className="hover:text-gray-500">
+					<Link to={AppRoutePaths.HOME} className="hover:text-gray-500">
 						Home
 					</Link>
-					<Link to="/earlyInvestors" className="hover:text-gray-500">
+					<Link to={AppRoutePaths.EARLY_INVESTORS} className="hover:text-gray-500">
 						Early Investors
 					</Link>
 					{/* Change the links when needed */}
