@@ -16,7 +16,7 @@ export function PageEarlyInvestors() {
 				<h1 className="heading-1 text-center">Early Investor Opportunity</h1>
 				<div className="mt-12 shadow-lg shadow-bleu-fonce p-6 rounded-lg bg-bleu-fonce">
 					<h2 className="heading-3">Invest in beehive</h2>
-					<Button variant="bleu" className="rounded-lg text-white w-full mt-4">
+					<Button variant="bleuFonce" className="rounded-lg text-white w-full mt-4">
 						Start Investing
 					</Button>
 					<p className="paragraph text-sm text-gray-400">

@@ -11,7 +11,7 @@ export default function ConnectWalletButton() {
 
 	return (
 		<Button
-			variant="bleu"
+			variant="bleuFonce"
 			onClick={() => wcConnector && connect({ connector: wcConnector })}
 			disabled={isPending}
 		>
