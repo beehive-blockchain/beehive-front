@@ -23,7 +23,7 @@ export default function HeroSection() {
 				</p>
 				<div className="flex flex-row space-x-8">
 					<div className="mt-6 flex flex-col items-center">
-						<Button variant="bleu" className="rounded-full text-white mb-6">
+						<Button variant="bleuFonce" className="rounded-full text-white mb-6">
 							Start Investing
 						</Button>
 						<p className="font-bold text-paragraph text-center">$X.XB</p>

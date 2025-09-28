@@ -28,11 +28,11 @@ export default function TokenomicsSection() {
 						our commitment to community ownership.
 					</p>
 					<div className="flex flex-col md:flex-row justify-center items-center mt-6 text-white space-y-4 md:space-x-8 md:space-y-0">
-						<div className="backdrop-blur-sm bg-violet-clair/25 border border-violet-clair/40 rounded-lg shadow-lg py-2 flex flex-col items-center justify-between w-40">
+						<div className="backdrop-blur-sm bg-bleu-fonce/25 border border-bleu-fonce/40 rounded-lg shadow-lg py-2 flex flex-col items-center justify-between w-40">
 							<p className="text-xs">Total Supply</p>
 							<p className="text-xl font-semibold">1,000,000,000</p>
 						</div>
-						<div className="backdrop-blur-sm bg-violet-clair/25 border border-violet-clair/40 rounded-lg shadow-lg py-2 flex flex-col items-center justify-between w-40">
+						<div className="backdrop-blur-sm bg-bleu-fonce/25 border border-bleu-fonce/40 rounded-lg shadow-lg py-2 flex flex-col items-center justify-between w-40">
 							<p className="text-xs font-semibold">Initial price</p>
 							<p className="text-xl">$1</p>
 						</div>

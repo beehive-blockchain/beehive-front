@@ -14,7 +14,7 @@ export default function Layout() {
 			className="min-h-screen"
 			style={{
 				backgroundImage:
-					'linear-gradient(to left bottom, #000207, #090e17, #101623, #141d2f, #18243c, #182746, #182b50, #192e5a, #152e63, #102f6b, #0c2e74, #092e7c)',
+					'linear-gradient(to left bottom, #000207, #080c16, #0f1625, #162034, #1d2a43, #1f2c45, #212e47, #233049, #202d46, #1d2a43, #1a2740, #17243d)',
 			}}
 		>
 			<Header />

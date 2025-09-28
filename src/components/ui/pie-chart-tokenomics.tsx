@@ -99,7 +99,7 @@ export function Component() {
 												backgroundColor: `var(--color-${key})`,
 											}}
 										/>
-										<p className="truncate">{config?.label}</p>
+										<p className="truncate text-white">{config?.label}</p>
 									</div>
 								</SelectItem>
 							);
@@ -152,14 +152,14 @@ export function Component() {
 												<tspan
 													x={viewBox.cx}
 													y={viewBox.cy}
-													className="fill-foreground text-3xl font-bold"
+													className="fill-white text-3xl font-bold"
 												>
 													{desktopData[activeIndex].desktop.toLocaleString()}%
 												</tspan>
 												<tspan
 													x={viewBox.cx}
 													y={(viewBox.cy || 0) + 24}
-													className="fill-muted-foreground text-sm"
+													className="fill-white/70 text-sm"
 												>
 													{desktopData[activeIndex].crypto}
 												</tspan>

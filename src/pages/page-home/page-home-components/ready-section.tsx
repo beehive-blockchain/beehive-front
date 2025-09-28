@@ -27,7 +27,7 @@ export default function ReadyToStartSection() {
 				</p>
 				<div className="flex flex-row space-x-8">
 					<div className="mt-6 flex flex-col items-center">
-						<Button variant="bleu" className="rounded-full text-white mb-6">
+						<Button variant="bleuFonce" className="rounded-full text-white mb-6">
 							Start Investing
 							<MoveRight />
 						</Button>
@@ -37,7 +37,7 @@ export default function ReadyToStartSection() {
 						</p>
 					</div>
 					<div className="mt-6 flex flex-col items-center">
-						<Button variant="secondary" className="rounded-full mb-6">
+						<Button variant="ghost" className="rounded-full mb-6">
 							More informations
 						</Button>
 						<p className="font-bold text-paragraph text-center">XX.X%</p>
