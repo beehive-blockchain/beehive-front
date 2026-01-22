@@ -46,7 +46,7 @@ export default function PageWhitePaper() {
 				</p>
 
 				<h3 className="heading-3 mb-4">2.1 Core Features</h3>
-				<ul className="list-disc pl-8 mb-6text-paragraph">
+				<ul className="list-disc pl-8 mb-6 space-y-2 text-neutral-400">
 					<li>Decentralized governance</li>
 					<li>Transparent fundraising</li>
 					<li>Community-driven project selection</li>
@@ -68,7 +68,7 @@ export default function PageWhitePaper() {
 				</p>
 
 				<h3 className="heading-3 mb-4">3.1 Token Distribution</h3>
-				<ul className="list-disc pl-8 mb-6text-paragraph">
+				<ul className="list-disc pl-8 mb-6 space-y-2 text-neutral-400">
 					<li>Community: 50%</li>
 					<li>Team: 20%</li>
 					<li>Advisors: 10%</li>

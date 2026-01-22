@@ -17,25 +17,25 @@ export default function Footer() {
 					<div className="flex flex-col items-center md:items-baseline md:flex-row justify-between">
 						<div className="flex flex-col items-center md:items-start mb-4 md:mb-0">
 							<h4 className="text-lg font-bold">BeeHive</h4>
-							<p className="mt-2 hidden md:block md:w-2/5">
+							<p className="mt-2 hidden md:block md:w-2/5 text-neutral-300">
 								A next-generation crypto investment focused on delivering
 								exceptional returns through innovative strategies.
 							</p>
 						</div>
-						<nav className="flex items-center gap-6">
-							<Link to="#about" className="cursor-pointer hover:underline">
+						<nav className="flex items-center gap-6 text-sm text-neutral-400">
+							<Link to="#about" className="cursor-pointer hover:text-primary-400 transition-colors duration-300">
 								About
 							</Link>
-							<Link to="#contact" className="cursor-pointer hover:underline">
+							<Link to="#contact" className="cursor-pointer hover:text-primary-400 transition-colors duration-300">
 								Contact
 							</Link>
-							<Link to="#privacy" className="cursor-pointer hover:underline">
+							<Link to="#privacy" className="cursor-pointer hover:text-primary-400 transition-colors duration-300">
 								Privacy Policy
 							</Link>
 						</nav>
 					</div>
-					<hr className="my-4 border-t border-gray-700" />
-					<p className="text-center mt-4">
+					<hr className="my-4 border-t border-neutral-700" />
+					<p className="text-center mt-4 text-neutral-400">
 						&copy; 2025 BeeHive. All rights reserved.
 					</p>
 				</motion.div>

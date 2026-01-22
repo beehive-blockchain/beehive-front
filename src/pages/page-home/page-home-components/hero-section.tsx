@@ -21,23 +21,34 @@ export default function HeroSection() {
 					BeeHive leverages advanced algorithms and market intelligence to
 					deliver exceptional returns in any market condition.
 				</p>
-				<div className="flex flex-row space-x-8">
-					<div className="mt-6 flex flex-col items-center">
-						<Button variant="bleuFonce" className="rounded-full text-white mb-6">
-							Start Investing
-						</Button>
-						<p className="font-bold text-paragraph text-center">$X.XB</p>
-						<p className="text-paragraph text-center">
-							Assets Under Management
-						</p>
-					</div>
-					<div className="mt-6 flex flex-col items-center">
-						<Button variant="ghost" className="mb-6 rounded-full">
-							Learn more
-							<MoveRight />
-						</Button>
-						<p className="font-bold text-paragraph text-center">XX.X%</p>
-						<p className="text-paragraph text-center">Average Annual Return</p>
+				<div className="glassmorphism p-10 mt-12 max-w-4xl w-full border-white/5 bg-white/5">
+					<div className="flex flex-col items-center space-y-12">
+						{/* First Row: Numbers */}
+						<div className="flex flex-row justify-center gap-12 md:gap-32 w-full">
+							<div className="text-center">
+								<p className="text-4xl md:text-5xl font-bold text-neutral-100 tracking-tight">$9.4B</p>
+								<p className="muted-text uppercase tracking-[0.2em] text-[10px] mt-2">
+									Assets Under Management
+								</p>
+							</div>
+							<div className="text-center">
+								<p className="text-4xl md:text-5xl font-bold text-neutral-100 tracking-tight">15.2%</p>
+								<p className="muted-text uppercase tracking-[0.2em] text-[10px] mt-2">
+									Average Annual Return
+								</p>
+							</div>
+						</div>
+
+						{/* Second Row: Buttons */}
+						<div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-2xl px-4">
+							<Button variant="bleuFonce" className="rounded-xl text-white px-10 py-7 text-lg font-bold shadow-lg shadow-primary-600/20 flex-1 w-full">
+								Start Investing
+								<MoveRight className="ml-2 h-5 w-5" />
+							</Button>
+							<Button variant="ghost" className="rounded-xl border-white/10 text-white/80 hover:text-white hover:bg-white/5 py-7 text-lg font-bold flex-1 w-full">
+								Learn More
+							</Button>
+						</div>
 					</div>
 				</div>
 			</motion.div>

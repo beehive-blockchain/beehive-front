@@ -4,20 +4,18 @@ import * as React from 'react';
 import { Label, Pie, PieChart, Sector } from 'recharts';
 import { PieSectorDataItem } from 'recharts/types/polar/Pie';
 
-import { Card, CardContent, CardHeader } from '@/components/ui/card-tokenomics';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card-tokenomics';
 import {
-	ChartConfig,
-	ChartContainer,
-	ChartStyle,
-	ChartTooltip,
-	ChartTooltipContent,
+    ChartConfig,
+    ChartContainer, ChartTooltip,
+    ChartTooltipContent
 } from '@/components/ui/chart';
 import {
-	Select,
-	SelectContent,
-	SelectItem,
-	SelectTrigger,
-	SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from '@/components/ui/select';
 const desktopData = [
 	{ crypto: 'PublicSale', desktop: 50, fill: 'var(--color-PublicSale)' },
@@ -68,50 +66,56 @@ export function Component() {
 	);
 
 	return (
-		<Card data-chart={id} className="flex flex-col">
-			<ChartStyle id={id} config={chartConfig} />
-			<CardHeader className="flex-row items-start space-y-0 pb-0">
-				<Select value={activeCrypto} onValueChange={setActiveCrypto}>
-					<SelectTrigger
-						className="ml-auto h-7 w-[130px] rounded-lg pl-2.5"
-						aria-label="Select a value"
-					>
-						<SelectValue placeholder="Select month" />
-					</SelectTrigger>
-					<SelectContent align="end" className="rounded-xl">
-						{months.map((key) => {
-							const config = chartConfig[key as keyof typeof chartConfig];
+		<Card data-chart={id} className="flex flex-col w-full">
+			<CardHeader className="flex flex-col items-center space-y-2 pb-6">
+				<CardTitle className="heading-3 text-center">Tokenomics</CardTitle>
+				<CardDescription className="paragraph text-center text-base max-w-2xl">
+					Explore our tokenomics to understand the supply, distribution, and
+					utility of our token. Get key insights into our economic model.
+				</CardDescription>
+				<div className="flex w-full justify-end mt-4">
+					<Select value={activeCrypto} onValueChange={setActiveCrypto}>
+						<SelectTrigger
+							className="h-9 w-[180px] rounded-xl pl-3 bg-white/5 border-white/10 text-neutral-200"
+							aria-label="Select a value"
+						>
+							<SelectValue placeholder="Select segment" />
+						</SelectTrigger>
+						<SelectContent align="end" className="rounded-xl bg-neutral-900 border-white/10">
+							{months.map((key) => {
+								const config = chartConfig[key as keyof typeof chartConfig];
 
-							if (!config) {
-								return null;
-							}
+								if (!config) {
+									return null;
+								}
 
-							return (
-								<SelectItem
-									key={key}
-									value={key}
-									className="rounded-lg [&_span]:flex"
-								>
-									<div className="flex items-center gap-2 text-xs">
-										<span
-											className="flex h-3 w-3 shrink-0 rounded-sm"
-											style={{
-												backgroundColor: `var(--color-${key})`,
-											}}
-										/>
-										<p className="truncate text-white">{config?.label}</p>
-									</div>
-								</SelectItem>
-							);
-						})}
-					</SelectContent>
-				</Select>
+								return (
+									<SelectItem
+										key={key}
+										value={key}
+										className="rounded-lg [&_span]:flex"
+									>
+										<div className="flex items-center gap-2 text-xs">
+											<span
+												className="flex h-3 w-3 shrink-0 rounded-sm"
+												style={{
+													backgroundColor: `var(--color-${key})`,
+												}}
+											/>
+											<p className="truncate text-white">{config?.label}</p>
+										</div>
+									</SelectItem>
+								);
+							})}
+						</SelectContent>
+					</Select>
+				</div>
 			</CardHeader>
 			<CardContent className="flex flex-1 justify-center pb-0">
 				<ChartContainer
 					id={id}
 					config={chartConfig}
-					className="mx-auto aspect-square w-full max-w-[300px]"
+					className="mx-auto aspect-square w-full max-w-[300px] min-h-[300px]"
 				>
 					<PieChart>
 						<ChartTooltip

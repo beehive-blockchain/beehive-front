@@ -16,32 +16,35 @@ export default function ReadyToStartSection() {
 			>
 				<h2 className="heading-2 text-center whitespace-pre">
 					Ready To Start Your
-					<span className="block text-white whitespace-pre">
+					<span className="block text-primary-400 whitespace-pre">
 						{' '}
-						Crypto Journey ?
+						Crypto Journey?
 					</span>
 				</h2>
-				<p className="paragraph mt-4 text-center">
+				<p className="paragraph mt-4 text-center max-w-2xl">
 					Join thousands of investors who have already discovered the potential
 					of Beehive. Get started today with as little as $1.
 				</p>
-				<div className="flex flex-row space-x-8">
-					<div className="mt-6 flex flex-col items-center">
-						<Button variant="bleuFonce" className="rounded-full text-white mb-6">
-							Start Investing
-							<MoveRight />
-						</Button>
-						<p className="font-bold text-paragraph text-center">$X.XB</p>
-						<p className="text-paragraph text-center">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16 w-full max-w-4xl px-4">
+					<div className="glassmorphism p-10 flex flex-col items-center justify-center text-center border-white/5 bg-white/5 transition-transform hover:scale-[1.02] duration-300">
+						<p className="text-4xl font-bold text-neutral-100 mb-2 tracking-tight">$9.4B</p>
+						<p className="muted-text uppercase tracking-[0.2em] text-[10px]">
 							Assets Under Management
 						</p>
-					</div>
-					<div className="mt-6 flex flex-col items-center">
-						<Button variant="ghost" className="rounded-full mb-6">
-							More informations
+						<Button variant="bleuFonce" className="rounded-xl text-white mt-8 px-10 py-7 text-lg font-bold w-full shadow-lg shadow-primary-600/20">
+							Start Investing
+							<MoveRight className="ml-2 h-5 w-5" />
 						</Button>
-						<p className="font-bold text-paragraph text-center">XX.X%</p>
-						<p className="text-paragraph text-center">Average Annual Return</p>
+					</div>
+					
+					<div className="glassmorphism p-10 flex flex-col items-center justify-center text-center border-white/5 bg-white/5 transition-transform hover:scale-[1.02] duration-300">
+						<p className="text-4xl font-bold text-neutral-100 mb-2 tracking-tight">15.2%</p>
+						<p className="muted-text uppercase tracking-[0.2em] text-[10px]">
+							Average Annual Return
+						</p>
+						<Button variant="ghost" className="rounded-xl mt-8 border-white/10 text-white/80 hover:text-white hover:bg-white/5 w-full py-7 text-lg font-bold">
+							More Information
+						</Button>
 					</div>
 				</div>
 			</motion.div>
